@@ -1,5 +1,6 @@
 flows:
-  aa2b1e81-39c4-46e9-a15b-811b5a641379: {ver: 3, file: github1.snapshot, comments: relation
-      added, author: anonymous, created: 1690270532879, flowName: github1, flowDesc: ''}
+  aa2b1e81-39c4-46e9-a15b-811b5a641379: {ver: 4, file: github1.snapshot, comments: new
+      attribute added, author: anonymous, created: 1690270805759, flowName: github1,
+    flowDesc: ''}
 layoutVer: 1
 bucketId: 6ab20b82-9e02-4e5a-983c-b4b9a2b4911c

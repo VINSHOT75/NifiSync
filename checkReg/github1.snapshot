@@ -23,39 +23,6 @@
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "89365ca4-255f-3c39-8f07-8be8f28a8435",
-          "identifier" : "46496728-37f1-3050-a12f-80f4cdcc96bc",
-          "instanceIdentifier" : "8bf910e7-0189-1000-0557-0988a8dda922",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "89365ca4-255f-3c39-8f07-8be8f28a8435",
-            "id" : "81460bae-5423-3e2b-b1a0-0e975005c949",
-            "instanceIdentifier" : "89b5980f-0189-1000-9087-7ef17a7ae861",
-            "name" : "GenerateFlowFile",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "89365ca4-255f-3c39-8f07-8be8f28a8435",
-            "id" : "164744e2-1fde-355e-9732-1e2d11018215",
-            "instanceIdentifier" : "89b6de9c-0189-1000-ecfd-a3995fad6364",
-            "name" : "Funnel",
-            "type" : "FUNNEL"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "89365ca4-255f-3c39-8f07-8be8f28a8435",
           "identifier" : "85ed71a2-4497-3b54-98cf-956fe96192e4",
           "instanceIdentifier" : "89b6ec09-0189-1000-7ba4-bd21e7464b05",
           "labelIndex" : 1,
@@ -242,6 +209,7 @@
             "y" : 160.99999085029924
           },
           "properties" : {
+            "test" : "vinayak",
             "Store State" : "Do not store state",
             "canonical-value-lookup-cache-size" : "100"
           },
@@ -250,6 +218,12 @@
               "displayName" : "Delete Attributes Expression",
               "identifiesControllerService" : false,
               "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "test" : {
+              "displayName" : "test",
+              "identifiesControllerService" : false,
+              "name" : "test",
               "sensitive" : false
             },
             "Store State" : {
