@@ -147,16 +147,26 @@
         "defaultFlowFileExpiration" : "0 sec",
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
-        "funnels" : [ ],
+        "funnels" : [ {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "c72b4142-763e-3a78-aba5-c7288216810a",
+          "identifier" : "52f3ce79-a3ae-3752-a9a5-2e769a41a145",
+          "instanceIdentifier" : "9901867e-0189-1000-4ca1-0721617a6364",
+          "position" : {
+            "x" : 360.99999407611335,
+            "y" : 19.00000247093294
+          }
+        } ],
         "identifier" : "c72b4142-763e-3a78-aba5-c7288216810a",
         "inputPorts" : [ ],
         "instanceIdentifier" : "975779ff-0189-1000-c650-931991ab0d38",
         "labels" : [ ],
         "name" : "xyz",
         "outputPorts" : [ ],
+        "parameterContextName" : "adoc",
         "position" : {
           "x" : 688.0,
-          "y" : 1016.0
+          "y" : 952.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -1236,7 +1246,49 @@
         "variables" : { }
       },
       "flowEncodingVersion" : "1.0",
-      "parameterContexts" : { },
+      "parameterContexts" : {
+        "sftps" : {
+          "componentType" : "PARAMETER_CONTEXT",
+          "inheritedParameterContexts" : [ ],
+          "name" : "sftps",
+          "parameters" : [ {
+            "description" : "",
+            "name" : "adoc-sftp-host",
+            "provided" : false,
+            "sensitive" : false,
+            "value" : "abc"
+          }, {
+            "description" : "",
+            "name" : "adoc-sftp-psswd",
+            "provided" : false,
+            "sensitive" : true
+          } ]
+        },
+        "filepaths" : {
+          "componentType" : "PARAMETER_CONTEXT",
+          "inheritedParameterContexts" : [ "sftps" ],
+          "name" : "filepaths",
+          "parameters" : [ {
+            "description" : "",
+            "name" : "Attributes Regular Expression",
+            "provided" : false,
+            "sensitive" : false,
+            "value" : "newattr ${now()}"
+          }, {
+            "description" : "",
+            "name" : "source.filepath",
+            "provided" : false,
+            "sensitive" : false,
+            "value" : "vin/abc/"
+          } ]
+        },
+        "adoc" : {
+          "componentType" : "PARAMETER_CONTEXT",
+          "inheritedParameterContexts" : [ "filepaths", "sftps" ],
+          "name" : "adoc",
+          "parameters" : [ ]
+        }
+      },
       "parameterProviders" : { }
     }
   }
