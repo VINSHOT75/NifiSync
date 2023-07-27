@@ -107,6 +107,39 @@
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "c72b4142-763e-3a78-aba5-c7288216810a",
+            "id" : "64abf42a-fdf0-3253-a010-19d442cd4f2a",
+            "instanceIdentifier" : "9757d4f6-0189-1000-548c-d8bec0f836d5",
+            "name" : "FetchFTP",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "c72b4142-763e-3a78-aba5-c7288216810a",
+          "identifier" : "8a44d311-c7d3-3cbe-8b06-559284b56e5f",
+          "instanceIdentifier" : "97621112-0189-1000-813b-9006286d144d",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "c72b4142-763e-3a78-aba5-c7288216810a",
+            "id" : "fb57829e-b198-35dd-821e-e6a5134b27c3",
+            "instanceIdentifier" : "97587b77-0189-1000-137e-ac13f4440dca",
+            "name" : "GetSFTP",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
         } ],
         "controllerServices" : [ ],
         "defaultBackPressureDataSizeThreshold" : "1 GB",
@@ -122,8 +155,8 @@
         "name" : "xyz",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 720.0,
-          "y" : 992.0
+          "x" : 688.0,
+          "y" : 1016.0
         },
         "processGroups" : [ ],
         "processors" : [ {
