@@ -1,0 +1,1210 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "c72b4142-763e-3a78-aba5-c7288216810a",
+            "id" : "aed6aed5-8d5f-3e39-ac36-a8a16dba801e",
+            "instanceIdentifier" : "9759b799-0189-1000-2de7-cba02c9663fc",
+            "name" : "JoltTransformJSON",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "c72b4142-763e-3a78-aba5-c7288216810a",
+          "identifier" : "0b1e4dd3-cd50-3789-8e82-af43183cc66e",
+          "instanceIdentifier" : "9759d56c-0189-1000-a5c7-dd1f613beaa1",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "c72b4142-763e-3a78-aba5-c7288216810a",
+            "id" : "64abf42a-fdf0-3253-a010-19d442cd4f2a",
+            "instanceIdentifier" : "9757d4f6-0189-1000-548c-d8bec0f836d5",
+            "name" : "FetchFTP",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "c72b4142-763e-3a78-aba5-c7288216810a",
+            "id" : "9456e5fa-e839-3173-b6ad-d015476afc42",
+            "instanceIdentifier" : "9759f6c7-0189-1000-e122-a8af1347cc2d",
+            "name" : "PutSFTP",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "c72b4142-763e-3a78-aba5-c7288216810a",
+          "identifier" : "a3902dc4-3f2e-31c9-be12-6d7f35e3d0cc",
+          "instanceIdentifier" : "975a0afe-0189-1000-bce7-72760d61225f",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "c72b4142-763e-3a78-aba5-c7288216810a",
+            "id" : "aed6aed5-8d5f-3e39-ac36-a8a16dba801e",
+            "instanceIdentifier" : "9759b799-0189-1000-2de7-cba02c9663fc",
+            "name" : "JoltTransformJSON",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "c72b4142-763e-3a78-aba5-c7288216810a",
+            "id" : "64abf42a-fdf0-3253-a010-19d442cd4f2a",
+            "instanceIdentifier" : "9757d4f6-0189-1000-548c-d8bec0f836d5",
+            "name" : "FetchFTP",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "c72b4142-763e-3a78-aba5-c7288216810a",
+          "identifier" : "57f81d18-502d-35a6-9257-8a292bf2f781",
+          "instanceIdentifier" : "9757e92d-0189-1000-0df7-2b500898c90a",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "c72b4142-763e-3a78-aba5-c7288216810a",
+            "id" : "80542d5c-ee18-3256-b2e5-aa805e6f1045",
+            "instanceIdentifier" : "9757b3e9-0189-1000-3b2d-be9f669dd525",
+            "name" : "ListSFTP",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        } ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "c72b4142-763e-3a78-aba5-c7288216810a",
+        "inputPorts" : [ ],
+        "instanceIdentifier" : "975779ff-0189-1000-c650-931991ab0d38",
+        "labels" : [ ],
+        "name" : "xyz",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 720.0,
+          "y" : 992.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "c72b4142-763e-3a78-aba5-c7288216810a",
+          "identifier" : "64abf42a-fdf0-3253-a010-19d442cd4f2a",
+          "instanceIdentifier" : "9757d4f6-0189-1000-548c-d8bec0f836d5",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "FetchFTP",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1000.0,
+            "y" : 144.0
+          },
+          "properties" : {
+            "Port" : "21",
+            "Create Directory" : "false",
+            "Use Compression" : "false",
+            "Proxy Type" : "DIRECT",
+            "Completion Strategy" : "None",
+            "Connection Mode" : "Passive",
+            "fetchfiletransfer-notfound-loglevel" : "ERROR",
+            "Connection Timeout" : "30 sec",
+            "ftp-use-utf8" : "false",
+            "Data Timeout" : "30 sec",
+            "Transfer Mode" : "Binary",
+            "Internal Buffer Size" : "16KB"
+          },
+          "propertyDescriptors" : {
+            "Proxy Host" : {
+              "displayName" : "Proxy Host",
+              "identifiesControllerService" : false,
+              "name" : "Proxy Host",
+              "sensitive" : false
+            },
+            "Http Proxy Password" : {
+              "displayName" : "Http Proxy Password",
+              "identifiesControllerService" : false,
+              "name" : "Http Proxy Password",
+              "sensitive" : true
+            },
+            "Port" : {
+              "displayName" : "Port",
+              "identifiesControllerService" : false,
+              "name" : "Port",
+              "sensitive" : false
+            },
+            "Remote File" : {
+              "displayName" : "Remote File",
+              "identifiesControllerService" : false,
+              "name" : "Remote File",
+              "sensitive" : false
+            },
+            "proxy-configuration-service" : {
+              "displayName" : "Proxy Configuration Service",
+              "identifiesControllerService" : true,
+              "name" : "proxy-configuration-service",
+              "sensitive" : false
+            },
+            "Http Proxy Username" : {
+              "displayName" : "Http Proxy Username",
+              "identifiesControllerService" : false,
+              "name" : "Http Proxy Username",
+              "sensitive" : false
+            },
+            "Hostname" : {
+              "displayName" : "Hostname",
+              "identifiesControllerService" : false,
+              "name" : "Hostname",
+              "sensitive" : false
+            },
+            "Create Directory" : {
+              "displayName" : "Create Directory",
+              "identifiesControllerService" : false,
+              "name" : "Create Directory",
+              "sensitive" : false
+            },
+            "Use Compression" : {
+              "displayName" : "Use Compression",
+              "identifiesControllerService" : false,
+              "name" : "Use Compression",
+              "sensitive" : false
+            },
+            "Proxy Type" : {
+              "displayName" : "Proxy Type",
+              "identifiesControllerService" : false,
+              "name" : "Proxy Type",
+              "sensitive" : false
+            },
+            "Completion Strategy" : {
+              "displayName" : "Completion Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Completion Strategy",
+              "sensitive" : false
+            },
+            "Connection Mode" : {
+              "displayName" : "Connection Mode",
+              "identifiesControllerService" : false,
+              "name" : "Connection Mode",
+              "sensitive" : false
+            },
+            "Proxy Port" : {
+              "displayName" : "Proxy Port",
+              "identifiesControllerService" : false,
+              "name" : "Proxy Port",
+              "sensitive" : false
+            },
+            "fetchfiletransfer-notfound-loglevel" : {
+              "displayName" : "Log level when file not found",
+              "identifiesControllerService" : false,
+              "name" : "fetchfiletransfer-notfound-loglevel",
+              "sensitive" : false
+            },
+            "Connection Timeout" : {
+              "displayName" : "Connection Timeout",
+              "identifiesControllerService" : false,
+              "name" : "Connection Timeout",
+              "sensitive" : false
+            },
+            "ftp-use-utf8" : {
+              "displayName" : "Use UTF-8 Encoding",
+              "identifiesControllerService" : false,
+              "name" : "ftp-use-utf8",
+              "sensitive" : false
+            },
+            "Data Timeout" : {
+              "displayName" : "Data Timeout",
+              "identifiesControllerService" : false,
+              "name" : "Data Timeout",
+              "sensitive" : false
+            },
+            "Transfer Mode" : {
+              "displayName" : "Transfer Mode",
+              "identifiesControllerService" : false,
+              "name" : "Transfer Mode",
+              "sensitive" : false
+            },
+            "Username" : {
+              "displayName" : "Username",
+              "identifiesControllerService" : false,
+              "name" : "Username",
+              "sensitive" : false
+            },
+            "Move Destination Directory" : {
+              "displayName" : "Move Destination Directory",
+              "identifiesControllerService" : false,
+              "name" : "Move Destination Directory",
+              "sensitive" : false
+            },
+            "Internal Buffer Size" : {
+              "displayName" : "Internal Buffer Size",
+              "identifiesControllerService" : false,
+              "name" : "Internal Buffer Size",
+              "sensitive" : false
+            },
+            "Password" : {
+              "displayName" : "Password",
+              "identifiesControllerService" : false,
+              "name" : "Password",
+              "sensitive" : true
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.FetchFTP",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "PRIMARY",
+          "groupIdentifier" : "c72b4142-763e-3a78-aba5-c7288216810a",
+          "identifier" : "80542d5c-ee18-3256-b2e5-aa805e6f1045",
+          "instanceIdentifier" : "9757b3e9-0189-1000-3b2d-be9f669dd525",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "ListSFTP",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 264.0,
+            "y" : 160.0
+          },
+          "properties" : {
+            "Minimum File Age" : "0 sec",
+            "et-initial-listing-target" : "all",
+            "Ignore Dotted Files" : "true",
+            "Port" : "22",
+            "et-time-window" : "3 hours",
+            "Proxy Type" : "DIRECT",
+            "Connection Timeout" : "30 sec",
+            "listing-strategy" : "timestamps",
+            "follow-symlink" : "false",
+            "Minimum File Size" : "0 B",
+            "Search Recursively" : "false",
+            "Strict Host Key Checking" : "false",
+            "Remote Path" : ".",
+            "Use Compression" : "false",
+            "Send Keep Alive On Timeout" : "true",
+            "Data Timeout" : "30 sec",
+            "target-system-timestamp-precision" : "auto-detect"
+          },
+          "propertyDescriptors" : {
+            "Proxy Host" : {
+              "displayName" : "Proxy Host",
+              "identifiesControllerService" : false,
+              "name" : "Proxy Host",
+              "sensitive" : false
+            },
+            "Http Proxy Password" : {
+              "displayName" : "Http Proxy Password",
+              "identifiesControllerService" : false,
+              "name" : "Http Proxy Password",
+              "sensitive" : true
+            },
+            "Minimum File Age" : {
+              "displayName" : "Minimum File Age",
+              "identifiesControllerService" : false,
+              "name" : "Minimum File Age",
+              "sensitive" : false
+            },
+            "et-initial-listing-target" : {
+              "displayName" : "Entity Tracking Initial Listing Target",
+              "identifiesControllerService" : false,
+              "name" : "et-initial-listing-target",
+              "sensitive" : false
+            },
+            "Ignore Dotted Files" : {
+              "displayName" : "Ignore Dotted Files",
+              "identifiesControllerService" : false,
+              "name" : "Ignore Dotted Files",
+              "sensitive" : false
+            },
+            "Port" : {
+              "displayName" : "Port",
+              "identifiesControllerService" : false,
+              "name" : "Port",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "proxy-configuration-service" : {
+              "displayName" : "Proxy Configuration Service",
+              "identifiesControllerService" : true,
+              "name" : "proxy-configuration-service",
+              "sensitive" : false
+            },
+            "Distributed Cache Service" : {
+              "displayName" : "Distributed Cache Service",
+              "identifiesControllerService" : true,
+              "name" : "Distributed Cache Service",
+              "sensitive" : false
+            },
+            "et-time-window" : {
+              "displayName" : "Entity Tracking Time Window",
+              "identifiesControllerService" : false,
+              "name" : "et-time-window",
+              "sensitive" : false
+            },
+            "Ciphers Allowed" : {
+              "displayName" : "Ciphers Allowed",
+              "identifiesControllerService" : false,
+              "name" : "Ciphers Allowed",
+              "sensitive" : false
+            },
+            "Proxy Type" : {
+              "displayName" : "Proxy Type",
+              "identifiesControllerService" : false,
+              "name" : "Proxy Type",
+              "sensitive" : false
+            },
+            "Private Key Passphrase" : {
+              "displayName" : "Private Key Passphrase",
+              "identifiesControllerService" : false,
+              "name" : "Private Key Passphrase",
+              "sensitive" : true
+            },
+            "Connection Timeout" : {
+              "displayName" : "Connection Timeout",
+              "identifiesControllerService" : false,
+              "name" : "Connection Timeout",
+              "sensitive" : false
+            },
+            "Path Filter Regex" : {
+              "displayName" : "Path Filter Regex",
+              "identifiesControllerService" : false,
+              "name" : "Path Filter Regex",
+              "sensitive" : false
+            },
+            "listing-strategy" : {
+              "displayName" : "Listing Strategy",
+              "identifiesControllerService" : false,
+              "name" : "listing-strategy",
+              "sensitive" : false
+            },
+            "follow-symlink" : {
+              "displayName" : "Follow symlink",
+              "identifiesControllerService" : false,
+              "name" : "follow-symlink",
+              "sensitive" : false
+            },
+            "Minimum File Size" : {
+              "displayName" : "Minimum File Size",
+              "identifiesControllerService" : false,
+              "name" : "Minimum File Size",
+              "sensitive" : false
+            },
+            "Search Recursively" : {
+              "displayName" : "Search Recursively",
+              "identifiesControllerService" : false,
+              "name" : "Search Recursively",
+              "sensitive" : false
+            },
+            "Strict Host Key Checking" : {
+              "displayName" : "Strict Host Key Checking",
+              "identifiesControllerService" : false,
+              "name" : "Strict Host Key Checking",
+              "sensitive" : false
+            },
+            "Password" : {
+              "displayName" : "Password",
+              "identifiesControllerService" : false,
+              "name" : "Password",
+              "sensitive" : true
+            },
+            "File Filter Regex" : {
+              "displayName" : "File Filter Regex",
+              "identifiesControllerService" : false,
+              "name" : "File Filter Regex",
+              "sensitive" : false
+            },
+            "Maximum File Age" : {
+              "displayName" : "Maximum File Age",
+              "identifiesControllerService" : false,
+              "name" : "Maximum File Age",
+              "sensitive" : false
+            },
+            "Http Proxy Username" : {
+              "displayName" : "Http Proxy Username",
+              "identifiesControllerService" : false,
+              "name" : "Http Proxy Username",
+              "sensitive" : false
+            },
+            "Hostname" : {
+              "displayName" : "Hostname",
+              "identifiesControllerService" : false,
+              "name" : "Hostname",
+              "sensitive" : false
+            },
+            "Maximum File Size" : {
+              "displayName" : "Maximum File Size",
+              "identifiesControllerService" : false,
+              "name" : "Maximum File Size",
+              "sensitive" : false
+            },
+            "Remote Path" : {
+              "displayName" : "Remote Path",
+              "identifiesControllerService" : false,
+              "name" : "Remote Path",
+              "sensitive" : false
+            },
+            "Host Key File" : {
+              "displayName" : "Host Key File",
+              "identifiesControllerService" : false,
+              "name" : "Host Key File",
+              "resourceDefinition" : {
+                "cardinality" : "SINGLE",
+                "resourceTypes" : [ "FILE" ]
+              },
+              "sensitive" : false
+            },
+            "Use Compression" : {
+              "displayName" : "Use Compression",
+              "identifiesControllerService" : false,
+              "name" : "Use Compression",
+              "sensitive" : false
+            },
+            "Message Authentication Codes Allowed" : {
+              "displayName" : "Message Authentication Codes Allowed",
+              "identifiesControllerService" : false,
+              "name" : "Message Authentication Codes Allowed",
+              "sensitive" : false
+            },
+            "Send Keep Alive On Timeout" : {
+              "displayName" : "Send Keep Alive On Timeout",
+              "identifiesControllerService" : false,
+              "name" : "Send Keep Alive On Timeout",
+              "sensitive" : false
+            },
+            "Proxy Port" : {
+              "displayName" : "Proxy Port",
+              "identifiesControllerService" : false,
+              "name" : "Proxy Port",
+              "sensitive" : false
+            },
+            "Data Timeout" : {
+              "displayName" : "Data Timeout",
+              "identifiesControllerService" : false,
+              "name" : "Data Timeout",
+              "sensitive" : false
+            },
+            "Private Key Path" : {
+              "displayName" : "Private Key Path",
+              "identifiesControllerService" : false,
+              "name" : "Private Key Path",
+              "resourceDefinition" : {
+                "cardinality" : "SINGLE",
+                "resourceTypes" : [ "FILE" ]
+              },
+              "sensitive" : false
+            },
+            "Username" : {
+              "displayName" : "Username",
+              "identifiesControllerService" : false,
+              "name" : "Username",
+              "sensitive" : false
+            },
+            "target-system-timestamp-precision" : {
+              "displayName" : "Target System Timestamp Precision",
+              "identifiesControllerService" : false,
+              "name" : "target-system-timestamp-precision",
+              "sensitive" : false
+            },
+            "Key Exchange Algorithms Allowed" : {
+              "displayName" : "Key Exchange Algorithms Allowed",
+              "identifiesControllerService" : false,
+              "name" : "Key Exchange Algorithms Allowed",
+              "sensitive" : false
+            },
+            "et-state-cache" : {
+              "displayName" : "Entity Tracking State Cache",
+              "identifiesControllerService" : true,
+              "name" : "et-state-cache",
+              "sensitive" : false
+            },
+            "Key Algorithms Allowed" : {
+              "displayName" : "Key Algorithms Allowed",
+              "identifiesControllerService" : false,
+              "name" : "Key Algorithms Allowed",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "1 min",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.ListSFTP",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "c72b4142-763e-3a78-aba5-c7288216810a",
+          "identifier" : "9456e5fa-e839-3173-b6ad-d015476afc42",
+          "instanceIdentifier" : "9759f6c7-0189-1000-e122-a8af1347cc2d",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "PutSFTP",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 793.9999940761134,
+            "y" : 598.0000024709329
+          },
+          "properties" : {
+            "Port" : "22",
+            "Create Directory" : "false",
+            "Conflict Resolution" : "NONE",
+            "Disable Directory Listing" : "false",
+            "Proxy Type" : "DIRECT",
+            "Connection Timeout" : "30 sec",
+            "Dot Rename" : "true",
+            "Strict Host Key Checking" : "false",
+            "Reject Zero-Byte Files" : "true",
+            "Use Compression" : "false",
+            "Send Keep Alive On Timeout" : "true",
+            "Data Timeout" : "30 sec",
+            "Batch Size" : "500"
+          },
+          "propertyDescriptors" : {
+            "Proxy Host" : {
+              "displayName" : "Proxy Host",
+              "identifiesControllerService" : false,
+              "name" : "Proxy Host",
+              "sensitive" : false
+            },
+            "Http Proxy Password" : {
+              "displayName" : "Http Proxy Password",
+              "identifiesControllerService" : false,
+              "name" : "Http Proxy Password",
+              "sensitive" : true
+            },
+            "Remote Owner" : {
+              "displayName" : "Remote Owner",
+              "identifiesControllerService" : false,
+              "name" : "Remote Owner",
+              "sensitive" : false
+            },
+            "Port" : {
+              "displayName" : "Port",
+              "identifiesControllerService" : false,
+              "name" : "Port",
+              "sensitive" : false
+            },
+            "proxy-configuration-service" : {
+              "displayName" : "Proxy Configuration Service",
+              "identifiesControllerService" : true,
+              "name" : "proxy-configuration-service",
+              "sensitive" : false
+            },
+            "Create Directory" : {
+              "displayName" : "Create Directory",
+              "identifiesControllerService" : false,
+              "name" : "Create Directory",
+              "sensitive" : false
+            },
+            "Conflict Resolution" : {
+              "displayName" : "Conflict Resolution",
+              "identifiesControllerService" : false,
+              "name" : "Conflict Resolution",
+              "sensitive" : false
+            },
+            "Ciphers Allowed" : {
+              "displayName" : "Ciphers Allowed",
+              "identifiesControllerService" : false,
+              "name" : "Ciphers Allowed",
+              "sensitive" : false
+            },
+            "Disable Directory Listing" : {
+              "displayName" : "Disable Directory Listing",
+              "identifiesControllerService" : false,
+              "name" : "Disable Directory Listing",
+              "sensitive" : false
+            },
+            "Temporary Filename" : {
+              "displayName" : "Temporary Filename",
+              "identifiesControllerService" : false,
+              "name" : "Temporary Filename",
+              "sensitive" : false
+            },
+            "Remote Group" : {
+              "displayName" : "Remote Group",
+              "identifiesControllerService" : false,
+              "name" : "Remote Group",
+              "sensitive" : false
+            },
+            "Proxy Type" : {
+              "displayName" : "Proxy Type",
+              "identifiesControllerService" : false,
+              "name" : "Proxy Type",
+              "sensitive" : false
+            },
+            "Private Key Passphrase" : {
+              "displayName" : "Private Key Passphrase",
+              "identifiesControllerService" : false,
+              "name" : "Private Key Passphrase",
+              "sensitive" : true
+            },
+            "Connection Timeout" : {
+              "displayName" : "Connection Timeout",
+              "identifiesControllerService" : false,
+              "name" : "Connection Timeout",
+              "sensitive" : false
+            },
+            "Permissions" : {
+              "displayName" : "Permissions",
+              "identifiesControllerService" : false,
+              "name" : "Permissions",
+              "sensitive" : false
+            },
+            "Dot Rename" : {
+              "displayName" : "Dot Rename",
+              "identifiesControllerService" : false,
+              "name" : "Dot Rename",
+              "sensitive" : false
+            },
+            "Last Modified Time" : {
+              "displayName" : "Last Modified Time",
+              "identifiesControllerService" : false,
+              "name" : "Last Modified Time",
+              "sensitive" : false
+            },
+            "Strict Host Key Checking" : {
+              "displayName" : "Strict Host Key Checking",
+              "identifiesControllerService" : false,
+              "name" : "Strict Host Key Checking",
+              "sensitive" : false
+            },
+            "Password" : {
+              "displayName" : "Password",
+              "identifiesControllerService" : false,
+              "name" : "Password",
+              "sensitive" : true
+            },
+            "Http Proxy Username" : {
+              "displayName" : "Http Proxy Username",
+              "identifiesControllerService" : false,
+              "name" : "Http Proxy Username",
+              "sensitive" : false
+            },
+            "Hostname" : {
+              "displayName" : "Hostname",
+              "identifiesControllerService" : false,
+              "name" : "Hostname",
+              "sensitive" : false
+            },
+            "Reject Zero-Byte Files" : {
+              "displayName" : "Reject Zero-Byte Files",
+              "identifiesControllerService" : false,
+              "name" : "Reject Zero-Byte Files",
+              "sensitive" : false
+            },
+            "Remote Path" : {
+              "displayName" : "Remote Path",
+              "identifiesControllerService" : false,
+              "name" : "Remote Path",
+              "sensitive" : false
+            },
+            "Host Key File" : {
+              "displayName" : "Host Key File",
+              "identifiesControllerService" : false,
+              "name" : "Host Key File",
+              "resourceDefinition" : {
+                "cardinality" : "SINGLE",
+                "resourceTypes" : [ "FILE" ]
+              },
+              "sensitive" : false
+            },
+            "Use Compression" : {
+              "displayName" : "Use Compression",
+              "identifiesControllerService" : false,
+              "name" : "Use Compression",
+              "sensitive" : false
+            },
+            "Message Authentication Codes Allowed" : {
+              "displayName" : "Message Authentication Codes Allowed",
+              "identifiesControllerService" : false,
+              "name" : "Message Authentication Codes Allowed",
+              "sensitive" : false
+            },
+            "Send Keep Alive On Timeout" : {
+              "displayName" : "Send Keep Alive On Timeout",
+              "identifiesControllerService" : false,
+              "name" : "Send Keep Alive On Timeout",
+              "sensitive" : false
+            },
+            "Proxy Port" : {
+              "displayName" : "Proxy Port",
+              "identifiesControllerService" : false,
+              "name" : "Proxy Port",
+              "sensitive" : false
+            },
+            "Data Timeout" : {
+              "displayName" : "Data Timeout",
+              "identifiesControllerService" : false,
+              "name" : "Data Timeout",
+              "sensitive" : false
+            },
+            "Private Key Path" : {
+              "displayName" : "Private Key Path",
+              "identifiesControllerService" : false,
+              "name" : "Private Key Path",
+              "resourceDefinition" : {
+                "cardinality" : "SINGLE",
+                "resourceTypes" : [ "FILE" ]
+              },
+              "sensitive" : false
+            },
+            "Username" : {
+              "displayName" : "Username",
+              "identifiesControllerService" : false,
+              "name" : "Username",
+              "sensitive" : false
+            },
+            "Batch Size" : {
+              "displayName" : "Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "Batch Size",
+              "sensitive" : false
+            },
+            "Key Exchange Algorithms Allowed" : {
+              "displayName" : "Key Exchange Algorithms Allowed",
+              "identifiesControllerService" : false,
+              "name" : "Key Exchange Algorithms Allowed",
+              "sensitive" : false
+            },
+            "Key Algorithms Allowed" : {
+              "displayName" : "Key Algorithms Allowed",
+              "identifiesControllerService" : false,
+              "name" : "Key Algorithms Allowed",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.PutSFTP",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "c72b4142-763e-3a78-aba5-c7288216810a",
+          "identifier" : "aed6aed5-8d5f-3e39-ac36-a8a16dba801e",
+          "instanceIdentifier" : "9759b799-0189-1000-2de7-cba02c9663fc",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "JoltTransformJSON",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 888.9999940761134,
+            "y" : 402.00000247093294
+          },
+          "properties" : {
+            "jolt-transform" : "jolt-transform-chain",
+            "pretty_print" : "false",
+            "Transform Cache Size" : "1"
+          },
+          "propertyDescriptors" : {
+            "jolt-spec" : {
+              "displayName" : "Jolt Specification",
+              "identifiesControllerService" : false,
+              "name" : "jolt-spec",
+              "sensitive" : false
+            },
+            "jolt-transform" : {
+              "displayName" : "Jolt Transformation DSL",
+              "identifiesControllerService" : false,
+              "name" : "jolt-transform",
+              "sensitive" : false
+            },
+            "jolt-custom-class" : {
+              "displayName" : "Custom Transformation Class Name",
+              "identifiesControllerService" : false,
+              "name" : "jolt-custom-class",
+              "sensitive" : false
+            },
+            "jolt-custom-modules" : {
+              "displayName" : "Custom Module Directory",
+              "identifiesControllerService" : false,
+              "name" : "jolt-custom-modules",
+              "resourceDefinition" : {
+                "cardinality" : "MULTIPLE",
+                "resourceTypes" : [ "FILE", "DIRECTORY" ]
+              },
+              "sensitive" : false
+            },
+            "pretty_print" : {
+              "displayName" : "Pretty Print",
+              "identifiesControllerService" : false,
+              "name" : "pretty_print",
+              "sensitive" : false
+            },
+            "Transform Cache Size" : {
+              "displayName" : "Transform Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "Transform Cache Size",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.JoltTransformJSON",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "c72b4142-763e-3a78-aba5-c7288216810a",
+          "identifier" : "fb57829e-b198-35dd-821e-e6a5134b27c3",
+          "instanceIdentifier" : "97587b77-0189-1000-137e-ac13f4440dca",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "GetSFTP",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 248.0,
+            "y" : 432.0
+          },
+          "properties" : {
+            "Ignore Dotted Files" : "true",
+            "Port" : "22",
+            "Max Selects" : "100",
+            "Proxy Type" : "DIRECT",
+            "Connection Timeout" : "30 sec",
+            "follow-symlink" : "false",
+            "Search Recursively" : "false",
+            "Strict Host Key Checking" : "false",
+            "Remote Poll Batch Size" : "5000",
+            "Polling Interval" : "60 sec",
+            "Use Compression" : "false",
+            "Send Keep Alive On Timeout" : "true",
+            "Data Timeout" : "30 sec",
+            "Use Natural Ordering" : "false",
+            "Delete Original" : "true"
+          },
+          "propertyDescriptors" : {
+            "Proxy Host" : {
+              "displayName" : "Proxy Host",
+              "identifiesControllerService" : false,
+              "name" : "Proxy Host",
+              "sensitive" : false
+            },
+            "Http Proxy Password" : {
+              "displayName" : "Http Proxy Password",
+              "identifiesControllerService" : false,
+              "name" : "Http Proxy Password",
+              "sensitive" : true
+            },
+            "Ignore Dotted Files" : {
+              "displayName" : "Ignore Dotted Files",
+              "identifiesControllerService" : false,
+              "name" : "Ignore Dotted Files",
+              "sensitive" : false
+            },
+            "Port" : {
+              "displayName" : "Port",
+              "identifiesControllerService" : false,
+              "name" : "Port",
+              "sensitive" : false
+            },
+            "proxy-configuration-service" : {
+              "displayName" : "Proxy Configuration Service",
+              "identifiesControllerService" : true,
+              "name" : "proxy-configuration-service",
+              "sensitive" : false
+            },
+            "Ciphers Allowed" : {
+              "displayName" : "Ciphers Allowed",
+              "identifiesControllerService" : false,
+              "name" : "Ciphers Allowed",
+              "sensitive" : false
+            },
+            "Max Selects" : {
+              "displayName" : "Max Selects",
+              "identifiesControllerService" : false,
+              "name" : "Max Selects",
+              "sensitive" : false
+            },
+            "Proxy Type" : {
+              "displayName" : "Proxy Type",
+              "identifiesControllerService" : false,
+              "name" : "Proxy Type",
+              "sensitive" : false
+            },
+            "Private Key Passphrase" : {
+              "displayName" : "Private Key Passphrase",
+              "identifiesControllerService" : false,
+              "name" : "Private Key Passphrase",
+              "sensitive" : true
+            },
+            "Connection Timeout" : {
+              "displayName" : "Connection Timeout",
+              "identifiesControllerService" : false,
+              "name" : "Connection Timeout",
+              "sensitive" : false
+            },
+            "Path Filter Regex" : {
+              "displayName" : "Path Filter Regex",
+              "identifiesControllerService" : false,
+              "name" : "Path Filter Regex",
+              "sensitive" : false
+            },
+            "follow-symlink" : {
+              "displayName" : "Follow symlink",
+              "identifiesControllerService" : false,
+              "name" : "follow-symlink",
+              "sensitive" : false
+            },
+            "Search Recursively" : {
+              "displayName" : "Search Recursively",
+              "identifiesControllerService" : false,
+              "name" : "Search Recursively",
+              "sensitive" : false
+            },
+            "Strict Host Key Checking" : {
+              "displayName" : "Strict Host Key Checking",
+              "identifiesControllerService" : false,
+              "name" : "Strict Host Key Checking",
+              "sensitive" : false
+            },
+            "Password" : {
+              "displayName" : "Password",
+              "identifiesControllerService" : false,
+              "name" : "Password",
+              "sensitive" : true
+            },
+            "File Filter Regex" : {
+              "displayName" : "File Filter Regex",
+              "identifiesControllerService" : false,
+              "name" : "File Filter Regex",
+              "sensitive" : false
+            },
+            "Remote Poll Batch Size" : {
+              "displayName" : "Remote Poll Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "Remote Poll Batch Size",
+              "sensitive" : false
+            },
+            "Polling Interval" : {
+              "displayName" : "Polling Interval",
+              "identifiesControllerService" : false,
+              "name" : "Polling Interval",
+              "sensitive" : false
+            },
+            "Http Proxy Username" : {
+              "displayName" : "Http Proxy Username",
+              "identifiesControllerService" : false,
+              "name" : "Http Proxy Username",
+              "sensitive" : false
+            },
+            "Hostname" : {
+              "displayName" : "Hostname",
+              "identifiesControllerService" : false,
+              "name" : "Hostname",
+              "sensitive" : false
+            },
+            "Remote Path" : {
+              "displayName" : "Remote Path",
+              "identifiesControllerService" : false,
+              "name" : "Remote Path",
+              "sensitive" : false
+            },
+            "Host Key File" : {
+              "displayName" : "Host Key File",
+              "identifiesControllerService" : false,
+              "name" : "Host Key File",
+              "resourceDefinition" : {
+                "cardinality" : "SINGLE",
+                "resourceTypes" : [ "FILE" ]
+              },
+              "sensitive" : false
+            },
+            "Use Compression" : {
+              "displayName" : "Use Compression",
+              "identifiesControllerService" : false,
+              "name" : "Use Compression",
+              "sensitive" : false
+            },
+            "Message Authentication Codes Allowed" : {
+              "displayName" : "Message Authentication Codes Allowed",
+              "identifiesControllerService" : false,
+              "name" : "Message Authentication Codes Allowed",
+              "sensitive" : false
+            },
+            "Send Keep Alive On Timeout" : {
+              "displayName" : "Send Keep Alive On Timeout",
+              "identifiesControllerService" : false,
+              "name" : "Send Keep Alive On Timeout",
+              "sensitive" : false
+            },
+            "Proxy Port" : {
+              "displayName" : "Proxy Port",
+              "identifiesControllerService" : false,
+              "name" : "Proxy Port",
+              "sensitive" : false
+            },
+            "Data Timeout" : {
+              "displayName" : "Data Timeout",
+              "identifiesControllerService" : false,
+              "name" : "Data Timeout",
+              "sensitive" : false
+            },
+            "Private Key Path" : {
+              "displayName" : "Private Key Path",
+              "identifiesControllerService" : false,
+              "name" : "Private Key Path",
+              "resourceDefinition" : {
+                "cardinality" : "SINGLE",
+                "resourceTypes" : [ "FILE" ]
+              },
+              "sensitive" : false
+            },
+            "Username" : {
+              "displayName" : "Username",
+              "identifiesControllerService" : false,
+              "name" : "Username",
+              "sensitive" : false
+            },
+            "Key Exchange Algorithms Allowed" : {
+              "displayName" : "Key Exchange Algorithms Allowed",
+              "identifiesControllerService" : false,
+              "name" : "Key Exchange Algorithms Allowed",
+              "sensitive" : false
+            },
+            "Use Natural Ordering" : {
+              "displayName" : "Use Natural Ordering",
+              "identifiesControllerService" : false,
+              "name" : "Use Natural Ordering",
+              "sensitive" : false
+            },
+            "Delete Original" : {
+              "displayName" : "Delete Original",
+              "identifiesControllerService" : false,
+              "name" : "Delete Original",
+              "sensitive" : false
+            },
+            "Key Algorithms Allowed" : {
+              "displayName" : "Key Algorithms Allowed",
+              "identifiesControllerService" : false,
+              "name" : "Key Algorithms Allowed",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.GetSFTP",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { },
+      "parameterProviders" : { }
+    }
+  }
+}
