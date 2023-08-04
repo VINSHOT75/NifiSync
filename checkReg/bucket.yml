@@ -1,13 +1,6 @@
 flows:
-  c9d47e47-7ecc-4910-9f53-9af4d0a5ea96:
-    ver: 3
-    file: xyz.snapshot
-    comments: |
-      added a funnel and parameter context
-    author: anonymous
-    created: 1690489194706
-    flowName: xyz
-    flowDesc: ''
+  c9d47e47-7ecc-4910-9f53-9af4d0a5ea96: {ver: 4, file: xyz.snapshot, comments: changed
+      the lcation, author: anonymous, created: 1691155338527, flowName: xyz, flowDesc: ''}
   aa2b1e81-39c4-46e9-a15b-811b5a641379: {ver: 4, file: github1.snapshot, comments: new
       attribute added, author: anonymous, created: 1690270805759, flowName: github1,
     flowDesc: ''}
