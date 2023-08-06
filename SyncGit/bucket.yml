@@ -1,0 +1,12 @@
+flows:
+  5b8c7c8e-6020-432f-85da-c5b970d2ea1d:
+    ver: 2
+    file: scrip_vs_ootb.snapshot
+    comments: |
+      changed positions
+    author: anonymous
+    created: 1691342313155
+    flowName: scrip vs ootb
+    flowDesc: ''
+layoutVer: 1
+bucketId: df640461-6cba-46ea-a166-ce8e595a8b6a
