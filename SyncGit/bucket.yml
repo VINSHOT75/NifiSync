@@ -1,4 +1,6 @@
 flows:
+  bbc2a353-579d-42f4-ba89-888b560472f2: {ver: 1, file: flow1.snapshot, comments: '',
+    author: anonymous, created: 1692553017929, flowName: flow1, flowDesc: ''}
   5b8c7c8e-6020-432f-85da-c5b970d2ea1d:
     ver: 2
     file: scrip_vs_ootb.snapshot
