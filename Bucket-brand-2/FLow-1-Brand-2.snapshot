@@ -1,0 +1,169 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "73b01cfe-c0c4-3b60-881e-9821cf84a5a5",
+            "id" : "269f63e8-6161-33de-b2a8-6147eb2d893c",
+            "instanceIdentifier" : "141ba91f-018a-1000-0c68-62cbcafda0e7",
+            "name" : "JoltTransformRecord",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "73b01cfe-c0c4-3b60-881e-9821cf84a5a5",
+          "identifier" : "6367450b-70d9-37d1-80d2-1006276eb437",
+          "instanceIdentifier" : "141bb73f-018a-1000-171a-d8edc3327099",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "groupId" : "73b01cfe-c0c4-3b60-881e-9821cf84a5a5",
+            "id" : "801619a8-a654-3d07-8b8d-365f0555aaad",
+            "instanceIdentifier" : "141b8d1c-018a-1000-3e4f-b5a0278cedbc",
+            "name" : "abc",
+            "type" : "INPUT_PORT"
+          },
+          "zIndex" : 0
+        } ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "73b01cfe-c0c4-3b60-881e-9821cf84a5a5",
+        "inputPorts" : [ {
+          "allowRemoteAccess" : false,
+          "componentType" : "INPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "73b01cfe-c0c4-3b60-881e-9821cf84a5a5",
+          "identifier" : "801619a8-a654-3d07-8b8d-365f0555aaad",
+          "instanceIdentifier" : "141b8d1c-018a-1000-3e4f-b5a0278cedbc",
+          "name" : "abc",
+          "position" : {
+            "x" : 324.0,
+            "y" : 259.0138854980469
+          },
+          "scheduledState" : "ENABLED",
+          "type" : "INPUT_PORT"
+        } ],
+        "instanceIdentifier" : "141b787a-018a-1000-fbed-6137b25a49d2",
+        "labels" : [ ],
+        "name" : "brand-2",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 600.0,
+          "y" : 552.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-jolt-record-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "73b01cfe-c0c4-3b60-881e-9821cf84a5a5",
+          "identifier" : "269f63e8-6161-33de-b2a8-6147eb2d893c",
+          "instanceIdentifier" : "141ba91f-018a-1000-0c68-62cbcafda0e7",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "JoltTransformRecord",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 872.0,
+            "y" : 256.0
+          },
+          "properties" : {
+            "jolt-record-transform-cache-size" : "1",
+            "jolt-record-transform" : "jolt-transform-chain"
+          },
+          "propertyDescriptors" : {
+            "jolt-record-record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "jolt-record-record-writer",
+              "sensitive" : false
+            },
+            "jolt-record-transform-cache-size" : {
+              "displayName" : "Transform Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "jolt-record-transform-cache-size",
+              "sensitive" : false
+            },
+            "jolt-record-custom-class" : {
+              "displayName" : "Custom Transformation Class Name",
+              "identifiesControllerService" : false,
+              "name" : "jolt-record-custom-class",
+              "sensitive" : false
+            },
+            "jolt-record-custom-modules" : {
+              "displayName" : "Custom Module Directory",
+              "identifiesControllerService" : false,
+              "name" : "jolt-record-custom-modules",
+              "resourceDefinition" : {
+                "cardinality" : "MULTIPLE",
+                "resourceTypes" : [ "FILE", "DIRECTORY" ]
+              },
+              "sensitive" : false
+            },
+            "jolt-record-transform" : {
+              "displayName" : "Jolt Transformation DSL",
+              "identifiesControllerService" : false,
+              "name" : "jolt-record-transform",
+              "sensitive" : false
+            },
+            "jolt-record-record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "jolt-record-record-reader",
+              "sensitive" : false
+            },
+            "jolt-record-spec" : {
+              "displayName" : "Jolt Specification",
+              "identifiesControllerService" : false,
+              "name" : "jolt-record-spec",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.jolt.record.JoltTransformRecord",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { },
+      "parameterProviders" : { }
+    }
+  }
+}
