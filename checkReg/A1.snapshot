@@ -15,16 +15,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "6387a410-3cdb-3e2e-9e18-01cfd4008975",
+            "groupId" : "074b41ec-e06d-30f9-9e93-04e94118d930",
             "id" : "3514ac40-6b68-3c58-9c23-51fe3852f2da",
-            "instanceIdentifier" : "06c23445-0305-1f53-f12f-2a02d6f10ad1",
+            "instanceIdentifier" : "06c23449-0305-1f53-235d-116acb335f6c",
             "name" : "Funnel",
             "type" : "FUNNEL"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "6387a410-3cdb-3e2e-9e18-01cfd4008975",
+          "groupIdentifier" : "074b41ec-e06d-30f9-9e93-04e94118d930",
           "identifier" : "fbc04e20-658d-3948-a460-2b99109ec190",
-          "instanceIdentifier" : "06c23446-0305-1f53-faaa-37a97084d56a",
+          "instanceIdentifier" : "06c2344b-0305-1f53-bcca-5f5ee8a83018",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -34,9 +34,9 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "6387a410-3cdb-3e2e-9e18-01cfd4008975",
+            "groupId" : "074b41ec-e06d-30f9-9e93-04e94118d930",
             "id" : "70e4d875-df18-3b2f-9d30-d5bdbc4a032c",
-            "instanceIdentifier" : "06c23444-0305-1f53-855e-f9addc873bd2",
+            "instanceIdentifier" : "06c2344a-0305-1f53-2f2a-1ac7dfd7243b",
             "name" : "GenerateFlowFile",
             "type" : "PROCESSOR"
           },
@@ -50,23 +50,23 @@
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ {
           "componentType" : "FUNNEL",
-          "groupIdentifier" : "6387a410-3cdb-3e2e-9e18-01cfd4008975",
+          "groupIdentifier" : "074b41ec-e06d-30f9-9e93-04e94118d930",
           "identifier" : "3514ac40-6b68-3c58-9c23-51fe3852f2da",
-          "instanceIdentifier" : "06c23445-0305-1f53-f12f-2a02d6f10ad1",
+          "instanceIdentifier" : "06c23449-0305-1f53-235d-116acb335f6c",
           "position" : {
             "x" : 1033.9999982336703,
             "y" : 154.00000837134542
           }
         } ],
-        "identifier" : "6387a410-3cdb-3e2e-9e18-01cfd4008975",
+        "identifier" : "074b41ec-e06d-30f9-9e93-04e94118d930",
         "inputPorts" : [ ],
-        "instanceIdentifier" : "06c23443-0305-1f53-cd68-537ec6cb9524",
+        "instanceIdentifier" : "06c23448-0305-1f53-46fe-00a1ad8b6579",
         "labels" : [ ],
         "name" : "A",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 400.9999982336703,
-          "y" : 111.00000837134542
+          "x" : 880.0,
+          "y" : 96.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -82,9 +82,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "6387a410-3cdb-3e2e-9e18-01cfd4008975",
+          "groupIdentifier" : "074b41ec-e06d-30f9-9e93-04e94118d930",
           "identifier" : "70e4d875-df18-3b2f-9d30-d5bdbc4a032c",
-          "instanceIdentifier" : "06c23444-0305-1f53-855e-f9addc873bd2",
+          "instanceIdentifier" : "06c2344a-0305-1f53-2f2a-1ac7dfd7243b",
           "maxBackoffPeriod" : "10 mins",
           "name" : "GenerateFlowFile",
           "penaltyDuration" : "30 sec",
@@ -95,7 +95,7 @@
           "properties" : {
             "character-set" : "UTF-8",
             "File Size" : "0B",
-            "generate-ff-custom-text" : "a",
+            "generate-ff-custom-text" : "abc",
             "Batch Size" : "1",
             "Unique FlowFiles" : "false",
             "Data Format" : "Text"
